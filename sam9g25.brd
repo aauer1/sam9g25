@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -127,6 +127,21 @@
 <layer number="255" name="ZchnBlatt" color="15" fill="1" visible="no" active="no"/>
 </layers>
 <board>
+<description>&lt;b&gt;SAM9G25 Embedded Linux Board&lt;/b&gt;&lt;br/&gt;
+&lt;b&gt;Copyright (C) 2015  Andreas Auer (aauer1@emicrotec.at)&lt;/b&gt;
+&lt;p&gt;This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.&lt;/p&gt;
+
+&lt;p&gt;This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.&lt;/p&gt;
+
+&lt;p&gt;You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.&lt;/p&gt;</description>
 <plain>
 <wire x1="0" y1="0" x2="65" y2="0" width="0" layer="20"/>
 <wire x1="65" y1="0" x2="65" y2="46" width="0" layer="20"/>
@@ -2535,6 +2550,9 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
